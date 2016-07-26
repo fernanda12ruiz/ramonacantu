@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramona Cantú | Contacto</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+<!--Navegación -->
+<div class="nav">
+
+  <div id="menu" class="menu">
+    <div class="close">
+      <a href="#" class="cerrar">
+        <img src="images/cerrar.svg">
+        <span>Cerrar</span>
+      </a>
+   </div>
+
+    <div class="menu-logo">
+      <img src="images/logo-blanco.svg">
+      <hr>
+      <p>Contacto</p>
+    </div>
+
+    <ul class="links">
+
+      <li>
+        <a href="index.html">
+          <span>1</span> Inicio
+        </a>
+      </li>
+
+      <li>
+        <a href="bio.html">
+          <span>2</span> Bio
+        </a>
+      </li>
+      
+      <li>
+        <a href="tratamientos.html">
+          <span>3</span> Tratamientos
+        </a>
+      </li>
+
+      <li>
+        <a href="blog.html">
+          <span>4</span> Blog
+        </a>
+      </li>
+
+      <li>
+        <a href="contacto.html">
+          <span>5</span> Contacto
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+  <a href="#menu" class="open black">
+    <span>Menú</span>
+    <img src="images/menu.svg">
+  </a>
+
+  <div class="nav-logo black contacto-nav">
+    <img src="images/logo.svg">
+    <hr>
+    <p>Contacto</p>
+  </div>
+<!--// End Navegación -->
+
+<!-- Contenido -->
+
+<div id="contacto">
+  <div class="contact-form">
+    <div class="top-banner">
+      <h2>Contactar</h2>
+    </div>
+    <div class="form-content gracias">
+      <p>Tu mensaje ha sido enviado. Espera una respuesta pronto.</p>
+      <a href="index.html">Regresar a inicio</a>
+    </div>
+  </div>
+
+  <div class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.249136963731!2d-100.36789568447927!3d25.663034783681645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bdf176da1227%3A0xe61bc6b4fc9856ee!2sV%C3%ADa+Galvani+214%2C+Fuentes+del+Valle%2C+66220+Monterrey%2C+N.L.!5e0!3m2!1sen!2smx!4v1467166060820" width="1024" height="720" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- //End Contenido -->
+<!-- Footer -->
+<div class="footer">
+  <div class="green">
+    <div class="footer-info">
+      <h5>VÍA GALVANI 214. FUENTES DEL VALLE<br>
+      SAN PEDRO GARZA GARCÍA<br>
+      N.L. MÉXICO</h5>
+
+      <a href="tel:+52-811-133-2473" class="phone">1133-2473</a>
+      <a href="tel:+52-818-253-1778" class="phone">+52 (81) 8253-1778</a>
+    </div>
+      <div class="footer-links">
+        <ul class="social">
+          <li><a href="https://www.linkedin.com/in/ramona-i-cant%C3%BA-westendarp-873611a" target="_blank">LINKEDIN</a></li>
+          <li><a href="https://www.facebook.com/ramonacantu" target="_blank">FACEBOOK</a></li>
+          <li><a href="https://twitter.com/ramonacantu" target="_blank">TWITTER</a></li>
+        </ul>
+
+        <ul class="social">
+          <li><a href="blog.html" target="_blank">BLOG</a></li>
+          <li><a href="https://plus.google.com/u/0/116555482627484807607/posts" target="_blank">GOOGLE +</a></li>
+        </ul>
+      </div>
+
+      <div class="gray">
+        <p>Ramona Isabel Cantú Westendarp 2016</p>
+      </div>
+  </div>
+
+  <div class="footer-contacto">
+    <a href="contacto.html">DUDAS Y CONTACTO</a>
+  </div>
+
+  <a href="#top" rel="" id="anchor1" class="scroll-top anchorLink">
+    <img src="images/back-top.svg">
+  </a>
+</div>
+
+<!--// End Footer -->
+    
+    <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/slick/slick.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.index-slider').slick({
+          arrows: false,
+          autoplay: true,
+          dots: true,
+          infinite: true,
+          speed: 1500,
+          fade: true,
+          cssEase: 'linear'
+        });
+      });
+    </script>
+
+    <script>
+    $(document).ready(function(){
+      $('.timeline-slider').slick({
+          lazyLoad: 'ondemand',
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true
+        });
+  
+    });
+    </script>
+
+  </body>
+</html>
