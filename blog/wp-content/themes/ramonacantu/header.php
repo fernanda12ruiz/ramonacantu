@@ -18,11 +18,12 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
-<!-- Styles -->
+<!-- Custom -->
+<link rel="icon" type="image/png" href="../images/favicon.png">
 <link rel="stylesheet" type="text/css" href="../js/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="../js/slick/slick-theme.css"/>
 <link rel="stylesheet" href="../css/style.css" />
-<!-- /Styles -->
+<!-- /Custom -->
 </head>
 
 <body <?php body_class(); ?>>

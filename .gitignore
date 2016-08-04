@@ -3,6 +3,8 @@ node_modules
 npm-debug.log
 .ftpquota
 error_log
+fabfile.py
+*.pyc
 
 ## WORDPRESS ##
 *.log
