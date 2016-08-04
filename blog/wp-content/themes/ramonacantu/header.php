@@ -18,38 +18,121 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
-<!-- Styles -->
+<!-- Custom -->
+<meta name="description" content="<?php echo $description; /* WPCS: xss ok. */ ?>">
+<link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="stylesheet" type="text/css" href="../js/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="../js/slick/slick-theme.css"/>
 <link rel="stylesheet" href="../css/style.css" />
-<!-- /Styles -->
+<!-- /Custom -->
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ramonacantu' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
+	<div class="nav">
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
+	  <div id="menu" class="menu">
+	    <div class="close">
+	      <a href="#" class="cerrar">
+	        <img src="../images/cerrar.svg">
+	        <span>Cerrar</span>
+	      </a>
+	   </div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ramonacantu' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+	    <div class="menu-logo">
+	      <img src="../images/logo-blanco.svg">
+	      <hr>
+	      <p>Blog</p>
+	    </div>
+
+	    <ul class="links">
+
+	      <li>
+	        <a href="index.html">
+	          <span>1</span> Inicio
+	        </a>
+	      </li>
+
+	      <li>
+	        <a href="bio.html">
+	          <span>2</span> Bio
+	        </a>
+	      </li>
+	      
+	      <li>
+	        <a href="tratamientos.html">
+	          <span>3</span> Tratamientos
+	        </a>
+	      </li>
+
+	      <li>
+	        <a href="/blog">
+	          <span>4</span> Blog
+	        </a>
+	      </li>
+
+	      <li>
+	        <a href="contacto.html">
+	          <span>5</span> Contacto
+	        </a>
+	      </li>
+
+	    </ul>
+	  </div>
+	</div><!-- .nav -->
+
+  <a href="#menu" class="open black">
+    <span>Menú</span>
+    <img src="../images/menu.svg">
+  </a>
+
+  <div class="nav-logo black blog-logo">
+    <img src="../images/logo.svg">
+  </div>
 	</header><!-- #masthead -->
+
+	<div class="blog-main yellow">
+	  <div class="blog-text">
+	    <h3>Blog</h3>
+	  </div>
+
+	  <div class="blog-social">
+	    <ul class="redes">
+	      <li>
+	        <a href="" target="_blank">
+	          <img src="../images/social-sprite-01.svg">
+	        </a>
+	      </li>
+	      <li>
+	        <a href="" target="_blank">
+	          <img src="../images/social-sprite-02.svg">
+	        </a>
+	      </li>
+	      <li>
+	        <a href="" target="_blank">
+	          <img src="../images/social-sprite-03.svg">
+	        </a>
+	      </li>
+	      <li>
+	        <a href="" target="_blank">
+	          <img src="../images/social-sprite-04.svg">
+	        </a>
+	      </li>
+	      <li>
+	        <a href="" target="_blank">
+	          <img src="../images/social-sprite-05.svg">
+	        </a>
+	      </li>
+	    </ul>
+	  </div>
+	</div>
+	<!-- .blog-main -->
+
+	<div class="search-box yellow">
+	<?php get_search_form(); ?>
+
+	</div><!-- .search yellow -->
 
 	<div id="content" class="site-content">
