@@ -14,8 +14,11 @@
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_post_thumbnail('post-thumb');
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_post_thumbnail();
+
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>

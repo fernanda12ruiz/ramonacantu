@@ -2088,8 +2088,8 @@ form.search-form, .articulos-boton {
   display: -webkit-flex;
   display: flex;
   align-items: center;
-  flex: 0 0 100%;
-  width: 100%;
+  flex: 0 0 50%;
+  width: 50%;
 }
 
 .form{
@@ -2186,13 +2186,14 @@ form.search-form, .articulos-boton {
 	height: auto;
 }
 
-#blog-list, .seleccion-editor{
+#blog-list,
+.seleccion-editor,
+.post-list{
 	position: relative;
 	width: 100%;
 	display: inline-block;
 	background-color: rgba(242,242,242,1);
 	padding-top: 265px;
-
 }
 
 .posts, .art-title{

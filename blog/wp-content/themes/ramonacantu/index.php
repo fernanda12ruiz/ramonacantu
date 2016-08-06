@@ -13,10 +13,20 @@
  */
 
 get_header(); ?>
+	<div class="main-text blog-text">
+	  <h4>A través del psicoanálisis como cuerpo teórico y método clínico propongo ciertas reflexiones.</h4>
+	  <hr>
+	</div><!-- .blog-text -->
+	<div class="main-text gray blog-intro">
+	  <h2>Este blog contiene un revoltijo de artículos, 
+	  algunos fueron escritos para un lector especializado, y otros para un lector con curiosidad por temas sobre: <span>Psicoanálisis, psicoterapia, y psicología.</span></h2>
+	</div><!-- .blog-intro -->
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area post-list">
 		<main id="main" class="site-main" role="main">
-
+			<div class="art-title">
+		    <h2>Artículos <span><hr></span></h2>
+		  </div><!-- .art-title -->
 		<?php
 		if ( have_posts() ) :
 

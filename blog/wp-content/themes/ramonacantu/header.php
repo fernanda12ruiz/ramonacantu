@@ -128,10 +128,13 @@
 	  </div>
 	</div>
 	<!-- .blog-main -->
+	
 
 	<div class="search-box yellow">
 	<?php get_search_form(); ?>
-
+	<div class="articulos-boton">
+    <a href="/blog/#blog-list">VER ARTÍCULOS</a>
+  </div>
 	</div><!-- .search yellow -->
 
 	<div id="content" class="site-content">
