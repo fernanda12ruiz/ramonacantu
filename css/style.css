@@ -2269,7 +2269,9 @@ form.search-form, .articulos-boton {
 	transition: all 25s ease-in-out;
 }
 
-.thumb-info h4{
+.thumb-info h4,
+.thumb-info h1,
+.thumb-info h2{
 	font-size: 0.875rem;
 	font-weight: bold;
 	text-align: center;

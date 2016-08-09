@@ -49,19 +49,19 @@
 	    <ul class="links">
 
 	      <li>
-	        <a href="index.html">
+	        <a href="/index.html">
 	          <span>1</span> Inicio
 	        </a>
 	      </li>
 
 	      <li>
-	        <a href="bio.html">
+	        <a href="/bio.html">
 	          <span>2</span> Bio
 	        </a>
 	      </li>
 	      
 	      <li>
-	        <a href="tratamientos.html">
+	        <a href="/tratamientos.html">
 	          <span>3</span> Tratamientos
 	        </a>
 	      </li>
@@ -73,7 +73,7 @@
 	      </li>
 
 	      <li>
-	        <a href="contacto.html">
+	        <a href="/contacto.html">
 	          <span>5</span> Contacto
 	        </a>
 	      </li>

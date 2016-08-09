@@ -27,6 +27,7 @@ get_header(); ?>
 			<div class="art-title">
 		    <h2>Artículos <span><hr></span></h2>
 		  </div><!-- .art-title -->
+		  <div class="posts">
 		<?php
 		if ( have_posts() ) :
 
@@ -57,7 +58,7 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

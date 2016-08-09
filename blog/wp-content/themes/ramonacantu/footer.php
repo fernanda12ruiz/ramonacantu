@@ -64,36 +64,12 @@
 <script>
 $(document).ready(function(){
 
-  $('.index-slider').slick({
-    arrows: false,
-    autoplay: true,
-    dots: true,
-    infinite: true,
-    speed: 1500,
-    fade: true,
-    cssEase: 'linear'
-  });
-
-  $('.timeline-slider').slick({
-    lazyLoad: 'ondemand',
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true
-  });
-
-  if (windowSize < 415){
-    $('.timeline-slider').slick({
-      slidesToShow: 1
-    });
-  }
-
   $('.multiple-items').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3
   });
-
+  
 });
 </script>
 <!-- /Scripts -->
