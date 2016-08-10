@@ -62,15 +62,28 @@
 <script src="../js/slick/slick.js"></script>
 <script src="../js/app.js"></script>
 <script>
-$(document).ready(function(){
-
   $('.multiple-items').slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
   });
-  
-});
 </script>
 <!-- /Scripts -->
 

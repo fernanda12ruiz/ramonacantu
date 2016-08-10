@@ -37,6 +37,48 @@ article h1{
 	color: #111;
 }
 
+.posts{
+	overflow: hidden;
+}
+
+.navigation.posts-navigation{
+	display: none;
+}
+
+/*
+	Pagination
+*/
+
+.pagination:before,
+.pagination:after{
+	content: ' ';
+  display: table;
+}
+
+.pagination{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.nav-previous,
+.nav-next{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  border-top: 1px solid #333;
+	flex: 0 0 50%;
+	max-width: 50%;
+	    min-height: 61px;
+}
+
+.nav-next{
+	border-right: 1px solid #333;
+}
+
+.pagination a{
+	font-size: 1.5rem;
+}
 
 
 

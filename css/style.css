@@ -3701,6 +3701,30 @@ form.search-form, .articulos-boton {
 	    margin-right: 0;
 	}
 
+	.seleccion-editor{
+		margin-top: 0;
+	}
+
+	.multiple-items {
+	    margin: 0 auto 100px auto;
+	}
+
+	.seleccion-editor .art-title h2 {
+	    margin-bottom: 50px;
+	}
+
+	.slick-prev, .slick-next{
+		top: 30%;
+	}
+
+	.slick-prev {
+    	left: -45px;
+	}
+
+	.slick-next {
+	    right: -45px;
+	}
+
 }
 
 /* === LANDSCAPE ===*/
