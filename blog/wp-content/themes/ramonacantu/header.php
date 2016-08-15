@@ -9,6 +9,8 @@
  * @package ramonacantu
  */
 
+$la_url = 'http://' . $_SERVER['SERVER_NAME'];
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -19,10 +21,10 @@
 
 <?php wp_head(); ?>
 <!-- Custom -->
-<link rel="icon" type="image/png" href="../images/favicon.png">
-<link rel="stylesheet" type="text/css" href="../js/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="../js/slick/slick-theme.css"/>
-<link rel="stylesheet" href="../css/style.css" />
+<link rel="icon" type="image/png" href="<?php echo $la_url ?>/images/favicon.png">
+<link rel="stylesheet" type="text/css" href="<?php echo $la_url ?>/js/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo $la_url ?>/js/slick/slick-theme.css"/>
+<link rel="stylesheet" href="<?php echo $la_url ?>/css/style.css" />
 <!-- /Custom -->
 </head>
 

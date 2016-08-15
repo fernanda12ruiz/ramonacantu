@@ -56,11 +56,14 @@
 
 <?php wp_footer(); ?>
 
+<?php
+$la_url = 'http://' . $_SERVER['SERVER_NAME'];
+?>
 <!-- Scripts -->
-<script src="../js/jquery.js"></script>
-<script src="../js/slick/slick.min.js"></script>
-<script src="../js/slick/slick.js"></script>
-<script src="../js/app.js"></script>
+<script src="<?php echo $la_url; ?>/js/jquery.js"></script>
+<script src="<?php echo $la_url; ?>/js/slick/slick.min.js"></script>
+<script src="<?php echo $la_url; ?>/js/slick/slick.js"></script>
+<script src="<?php echo $la_url; ?>/js/app.js"></script>
 <script>
   $('.multiple-items').slick({
     infinite: true,
