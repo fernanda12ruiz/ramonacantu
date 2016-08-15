@@ -2319,7 +2319,7 @@ form.search-form, .articulos-boton {
 	transition: all .25s ease-in-out;
 }
 
-.post a:hover{
+.post a:hover .thumb-info{
 	background-color: rgba(248,249,3,1);
 	color: #fff;
 }
