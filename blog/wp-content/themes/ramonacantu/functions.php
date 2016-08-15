@@ -148,3 +148,5 @@ if ( function_exists( 'add_theme_support' ) ) {
     // delete the next line if you do not need additional image sizes
     add_image_size( 'post-thumb', 720, 9999 ); //300 pixels wide (and unlimited height)
 }
+
+$la_url = 'http://' . $_SERVER['SERVER_NAME'];

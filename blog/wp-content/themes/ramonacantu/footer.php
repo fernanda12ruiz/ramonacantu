@@ -9,6 +9,8 @@
  * @package ramonacantu
  */
 
+global $la_url;
+
 ?>
 
 	</div><!-- #content -->
@@ -47,7 +49,7 @@
   </div>
 
   <a href="#top" rel="" id="anchor1" class="scroll-top anchorLink">
-    <img src="../images/back-top.svg">
+    <img src="<?php echo $la_url; ?>/images/back-top.svg">
   </a>
 </footer>
 
@@ -56,9 +58,6 @@
 
 <?php wp_footer(); ?>
 
-<?php
-$la_url = 'http://' . $_SERVER['SERVER_NAME'];
-?>
 <!-- Scripts -->
 <script src="<?php echo $la_url; ?>/js/jquery.js"></script>
 <script src="<?php echo $la_url; ?>/js/slick/slick.min.js"></script>

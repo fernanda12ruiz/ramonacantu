@@ -9,7 +9,7 @@
  * @package ramonacantu
  */
 
-$la_url = 'http://' . $_SERVER['SERVER_NAME'];
+global $la_url;
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -37,13 +37,13 @@ $la_url = 'http://' . $_SERVER['SERVER_NAME'];
 	  <div id="menu" class="menu">
 	    <div class="close">
 	      <a href="#" class="cerrar">
-	        <img src="../images/cerrar.svg">
+	        <img src="<?php echo $la_url; ?>/images/cerrar.svg">
 	        <span>Cerrar</span>
 	      </a>
 	   </div>
 
 	    <div class="menu-logo">
-	      <img src="../images/logo-blanco.svg">
+	      <img src="<?php echo $la_url; ?>/images/logo-blanco.svg">
 	      <hr>
 	      <p>Blog</p>
 	    </div>
@@ -86,11 +86,11 @@ $la_url = 'http://' . $_SERVER['SERVER_NAME'];
 
   <a href="#menu" class="open black">
     <span>Menú</span>
-    <img src="../images/menu.svg">
+    <img src="<?php echo $la_url; ?>/images/menu.svg">
   </a>
 
   <div class="nav-logo black blog-logo">
-    <img src="../images/logo.svg">
+    <img src="<?php echo $la_url; ?>/images/logo.svg">
   </div>
 	</header><!-- #masthead -->
 
@@ -103,27 +103,27 @@ $la_url = 'http://' . $_SERVER['SERVER_NAME'];
 	    <ul class="redes">
 	      <li>
 	        <a href="" target="_blank">
-	          <img src="../images/social-sprite-01.svg">
+	          <img src="<?php echo $la_url; ?>/images/social-sprite-01.svg">
 	        </a>
 	      </li>
 	      <li>
 	        <a href="" target="_blank">
-	          <img src="../images/social-sprite-02.svg">
+	          <img src="<?php echo $la_url; ?>/images/social-sprite-02.svg">
 	        </a>
 	      </li>
 	      <li>
 	        <a href="" target="_blank">
-	          <img src="../images/social-sprite-03.svg">
+	          <img src="<?php echo $la_url; ?>/images/social-sprite-03.svg">
 	        </a>
 	      </li>
 	      <li>
 	        <a href="" target="_blank">
-	          <img src="../images/social-sprite-04.svg">
+	          <img src="<?php echo $la_url; ?>/images/social-sprite-04.svg">
 	        </a>
 	      </li>
 	      <li>
 	        <a href="" target="_blank">
-	          <img src="../images/social-sprite-05.svg">
+	          <img src="<?php echo $la_url; ?>/images/social-sprite-05.svg">
 	        </a>
 	      </li>
 	    </ul>
