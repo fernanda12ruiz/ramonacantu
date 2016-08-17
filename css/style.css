@@ -2092,10 +2092,6 @@ form.search-form, .articulos-boton {
   width: 50%;
 }
 
-.form{
-	width: 100%;
-}
-
 .search-box form label {
     display: inline-block;
     width: 80%;
@@ -2107,6 +2103,13 @@ form.search-form, .articulos-boton {
 .search-box form label img{
 	vertical-align: middle;
 	margin-right: 0.25rem;
+}
+
+.search-box input[type="text"]{
+	width: 80%;
+	border: none;
+	font-weight: bold;
+	letter-spacing: normal;
 }
 
 .search-box .screen-reader-text{
@@ -2128,6 +2131,8 @@ form.search-form, .articulos-boton {
 .search-box form button{
 	width: 5%;
 	padding: 0;
+	background: transparent;
+    border: none;
 }
 
 .search-box form button:hover{
@@ -2319,7 +2324,7 @@ form.search-form, .articulos-boton {
 	transition: all .25s ease-in-out;
 }
 
-.post a:hover{
+.post a:hover .thumb-info{
 	background-color: rgba(248,249,3,1);
 	color: #fff;
 }
@@ -3632,6 +3637,19 @@ form.search-form, .articulos-boton {
 
 	form.search-form, .articulos-boton{
 		width: 100%;
+		flex: 0 0 100%;
+	}
+
+	.search-box form label {
+	    width: 75%;
+	    padding-left: 1rem;
+	}
+
+	.search-box input[type="text"]{
+		width: 80%;
+		border: none;
+		font-weight: bold;
+		letter-spacing: normal;
 	}
 
 	#blog-list, .seleccion-editor{
@@ -3656,11 +3674,6 @@ form.search-form, .articulos-boton {
 	    width: 100%;
 	    display: block;
 	    height: 100%;
-	}
-
-	.seleccion-editor {
-	    margin-top: 0;
-	    display: none;
 	}
 
 	.post-info {
