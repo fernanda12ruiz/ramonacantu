@@ -15,6 +15,42 @@ global $la_url;
 
 	</div><!-- #content -->
 
+
+<div class="seleccion-editor">
+  <div class="art-title">
+    <h2>Selección del editor <span><hr></span></h2>
+  </div>
+
+  <div class="gray-bg"></div>
+
+  <div class="multiple-items">
+
+
+  <?php 
+    
+  $args = array('post_type' => 'seleccion_post', 'post_per_page' => 3 );
+  $loop = new WP_Query( $args );
+  
+  if( $loop->have_posts() ):
+    
+    while( $loop->have_posts() ): $loop->the_post(); ?>
+
+    <div class="blog-slide">
+      <a href="<?php the_field('url'); ?>" target="_blank">
+        <?php the_post_thumbnail(); ?>
+        <?php the_title( '<h5>', '</h5>' ); ?>
+      </a>
+    </div>
+  
+    <?php endwhile;
+    
+  endif;
+      
+  ?>
+
+  </div><!-- .multiple-items -->
+</div><!-- .seleccion-editor -->
+
 <!-- Footer -->
 <footer class="footer" role="contentinfo">
   <div class="green">

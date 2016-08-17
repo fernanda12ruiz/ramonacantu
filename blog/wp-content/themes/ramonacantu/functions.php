@@ -150,3 +150,42 @@ if ( function_exists( 'add_theme_support' ) ) {
 }
 
 $la_url = 'http://' . $_SERVER['SERVER_NAME'];
+
+function select_author_post_type (){
+	
+	$labels = array(
+		'name' => 'Seleccion del Autor',
+		'singular_name' => 'Seleccion',
+		'add_new' => 'Agregar Seleccion',
+		'all_items' => 'Todas',
+		'add_new_item' => 'Agregar Seleccion',
+		'edit_item' => 'Editar Seleccion',
+		'new_item' => 'Nueva Seleccion',
+		'view_item' => 'Ver Seleccion',
+		'search_item' => 'Buscar Seleccion',
+		'not_found' => 'No se encontraros articulos',
+		'not_found_in_trash' => 'No se encontraros articulos en papelera'
+	);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+		'has_archive' => true,
+		'publicly_queryable' => true,
+		'query_var' => true,
+		'rewrite' => true,
+		'capability_type' => 'post',
+		'hierarchical' => false,
+		'supports' => array(
+			'title',
+			// 'editor',
+			// 'excerpt',
+			'thumbnail',
+			// 'revisions',
+		),
+		'taxonomies' => array(),
+		'menu_position' => 5,
+		'exclude_from_search' => false
+	);
+	register_post_type('seleccion_post',$args);
+}
+add_action('init','select_author_post_type');
