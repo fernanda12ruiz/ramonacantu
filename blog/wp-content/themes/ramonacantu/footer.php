@@ -15,6 +15,41 @@ global $la_url;
 
 	</div><!-- #content -->
 
+
+<div class="seleccion-editor">
+  <div class="art-title">
+    <h2>Selección del editor <span><hr></span></h2>
+  </div>
+
+  <div class="gray-bg"></div>
+
+  <div class="multiple-items">
+
+  <?php 
+    
+  $args = array('post_type' => 'seleccion_post', 'posts_per_page' => 50 );
+  $loop = new WP_Query( $args );
+  
+  if( $loop->have_posts() ):
+    
+    while( $loop->have_posts() ): $loop->the_post(); ?>
+
+    <div class="blog-slide">
+      <a href="<?php the_field('url'); ?>" target="_blank">
+        <?php the_post_thumbnail(); ?>
+        <?php the_title( '<h5>', '</h5>' ); ?>
+      </a>
+    </div>
+  
+    <?php endwhile;
+    
+  endif;
+      
+  ?>
+
+  </div><!-- .multiple-items -->
+</div><!-- .seleccion-editor -->
+
 <!-- Footer -->
 <footer class="footer" role="contentinfo">
   <div class="green">
@@ -60,7 +95,6 @@ global $la_url;
 
 <!-- Scripts -->
 <script src="<?php echo $la_url; ?>/js/jquery.js"></script>
-<script src="<?php echo $la_url; ?>/js/slick/slick.min.js"></script>
 <script src="<?php echo $la_url; ?>/js/slick/slick.js"></script>
 <script src="<?php echo $la_url; ?>/js/app.js"></script>
 <script>
@@ -70,21 +104,24 @@ global $la_url;
     slidesToScroll: 3,
 
     responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
   });
 </script>
 <!-- /Scripts -->
