@@ -142,6 +142,8 @@ require get_template_directory() . '/inc/jetpack.php';
 ///////////////////////////////
 // Custom functions
 //////////////////////////////
+
+// Thumbnails
 if ( function_exists( 'add_theme_support' ) ) { 
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 365, 325, true ); // default Post Thumbnail dimensions (cropped)
@@ -153,6 +155,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 $la_url = 'http://' . $_SERVER['SERVER_NAME'];
 
+// Seleccion de autor
 function select_author_post_type (){
 	
 	$labels = array(
@@ -192,6 +195,8 @@ function select_author_post_type (){
 }
 add_action('init','select_author_post_type');
 
+
+// Pagination
 function wpbeginner_numeric_posts_nav() {
 
 	if( is_singular() )
@@ -261,5 +266,22 @@ function wpbeginner_numeric_posts_nav() {
 
 }
 
-
+// Post Number
+function Get_Post_Number($postID){
+	$temp_query = $wp_query;
+	$postNumberQuery = new WP_Query('orderby=date&order=<strong>DESC</strong>&posts_per_page=-1');
+	$counter = 1;
+	$postCount = 0;
+	if($postNumberQuery->have_posts()) :
+		while ($postNumberQuery->have_posts()) : $postNumberQuery->the_post();
+			if ($postID == get_the_ID()){
+				$postCount = $counter;
+			} else {
+				$counter++;
+			}
+	endwhile; endif;
+	wp_reset_query();
+	$wp_query = $temp_query;
+	return $postCount;
+}
 

@@ -9,12 +9,17 @@
 
 ?>
 
+<!-- Post numbe -->
+<?php $currentID = get_the_ID(); ?>
+<?php $currentNumber = Get_Post_Number($currentID); ?>
+<!-- /Post numbe -->
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	 <a href="<?php the_permalink(); ?>">
 		 <div class="thumb">
 	      <?php the_post_thumbnail(); ?>
 	      <div class="thumb-hover">
-	        <p><?php the_ID(); ?></p>
+	        <p><?php echo $currentNumber; ?></p>
 	        <hr>
 	      </div>
 	    </div>
@@ -23,3 +28,5 @@
       </div>
 	</a>
 </article><!-- #post-## -->
+
+
