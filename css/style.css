@@ -3894,3 +3894,86 @@ form.search-form, .articulos-boton {
 	    margin-top: 63px;
 	}
 }
+
+
+/****************************************
+ CSS CHULEOS
+*****************************************/
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#page{
+	height: 100%;
+}
+
+#page:before,
+#page:after{
+	content: ' ';
+  display: table;
+}
+
+article h1{
+	color: #111;
+}
+
+.posts{
+	overflow: hidden;
+}
+
+.navigation.posts-navigation{
+	display: none;
+}
+
+/*
+	Pagination
+*/
+
+.pagination:before,
+.pagination:after{
+	content: ' ';
+  display: table;
+}
+
+.pagination{
+	margin-left: 0;
+	text-align: center;
+}
+
+.pagination li{
+	display: inline-block;
+  font-size: 0.875rem;
+  margin-right: 0.0625rem;
+  border-radius: 0;
+}
+
+.pagination a{
+	color: #0a0a0a;
+	display: block;
+	padding: 0.1875rem 0.625rem;
+	border-radius: 0;
+}
+ 
+.pagination a:hover{
+	background-color: #E6E6E6;
+}
+
+.pagination .active{
+	background: #111;
+	color: #fefefe;
+	cursor: default;
+}
+
+.pagination .active a{
+	color: #fefefe;
+}
+
+.blog-slide a img{
+	height: auto;
+}
+
+
+
+
+
