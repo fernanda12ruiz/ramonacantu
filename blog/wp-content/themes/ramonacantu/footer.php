@@ -25,10 +25,9 @@ global $la_url;
 
   <div class="multiple-items">
 
-
   <?php 
     
-  $args = array('post_type' => 'seleccion_post', 'post_per_page' => 50 );
+  $args = array('post_type' => 'seleccion_post', 'posts_per_page' => 50 );
   $loop = new WP_Query( $args );
   
   if( $loop->have_posts() ):
@@ -96,7 +95,6 @@ global $la_url;
 
 <!-- Scripts -->
 <script src="<?php echo $la_url; ?>/js/jquery.js"></script>
-<script src="<?php echo $la_url; ?>/js/slick/slick.min.js"></script>
 <script src="<?php echo $la_url; ?>/js/slick/slick.js"></script>
 <script src="<?php echo $la_url; ?>/js/app.js"></script>
 <script>
@@ -106,24 +104,24 @@ global $la_url;
     slidesToScroll: 3,
 
     responsive: [
-    {
-      breakpoint: 770,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
-  ]
+    ]
   });
 </script>
 <!-- /Scripts -->

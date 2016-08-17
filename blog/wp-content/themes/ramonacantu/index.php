@@ -24,7 +24,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area post-list">
 		<main id="main" class="site-main" role="main">
-			<div class="art-title">
+			<div class="art-title" id="blog-list">
 		    <h2>Artículos <span><hr></span></h2>
 		  </div><!-- .art-title -->
 		  <div class="posts">

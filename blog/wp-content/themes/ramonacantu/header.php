@@ -22,8 +22,8 @@ global $la_url;
 <?php wp_head(); ?>
 <!-- Custom -->
 <link rel="icon" type="image/png" href="<?php echo $la_url ?>/images/favicon.png">
-<link rel="stylesheet" type="text/css" href="<?php echo $la_url ?>/js/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="<?php echo $la_url ?>/js/slick/slick-theme.css"/>
+<link rel="stylesheet" href="<?php echo $la_url ?>/js/slick/slick.css"/>
+<link rel="stylesheet" href="<?php echo $la_url ?>/js/slick/slick-theme.css"/>
 <link rel="stylesheet" href="<?php echo $la_url ?>/css/style.css" />
 <!-- /Custom -->
 </head>
@@ -135,7 +135,7 @@ global $la_url;
 	<div class="search-box yellow">
 	<?php get_search_form(); ?>
 	<div class="articulos-boton">
-    <a href="/blog/#blog-list">VER ARTÍCULOS</a>
+    <a href="#blog-list">VER ARTÍCULOS</a>
   </div>
 	</div><!-- .search yellow -->
 
