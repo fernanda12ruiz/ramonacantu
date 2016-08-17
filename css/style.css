@@ -2329,6 +2329,11 @@ form.search-form, .articulos-boton {
 	color: #fff;
 }
 
+#post .imagen img{
+	width: 100% !important;
+	height: auto !important;
+}
+
 
 .post a:hover .thumb-info h4{
 	color: #fff;
