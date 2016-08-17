@@ -102,27 +102,27 @@ global $la_url;
 	  <div class="blog-social">
 	    <ul class="redes">
 	      <li>
-	        <a href="" target="_blank">
+	        <a href="https://twitter.com/ramonacantu" target="_blank">
 	          <img src="<?php echo $la_url; ?>/images/social-sprite-01.svg">
 	        </a>
 	      </li>
 	      <li>
-	        <a href="" target="_blank">
+	        <a href="https://mx.linkedin.com/in/ramona-i-cantú-westendarp-873611a" target="_blank">
 	          <img src="<?php echo $la_url; ?>/images/social-sprite-02.svg">
 	        </a>
 	      </li>
 	      <li>
-	        <a href="" target="_blank">
+	        <a href="http://instagram.com" target="_blank">
 	          <img src="<?php echo $la_url; ?>/images/social-sprite-03.svg">
 	        </a>
 	      </li>
 	      <li>
-	        <a href="" target="_blank">
+	        <a href="https://www.facebook.com/ramonacantu" target="_blank">
 	          <img src="<?php echo $la_url; ?>/images/social-sprite-04.svg">
 	        </a>
 	      </li>
 	      <li>
-	        <a href="" target="_blank">
+	        <a href="https://plus.google.com/u/0/116555482627484807607/posts" target="_blank">
 	          <img src="<?php echo $la_url; ?>/images/social-sprite-05.svg">
 	        </a>
 	      </li>

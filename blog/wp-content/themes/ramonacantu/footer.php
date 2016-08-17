@@ -28,7 +28,7 @@ global $la_url;
 
   <?php 
     
-  $args = array('post_type' => 'seleccion_post', 'post_per_page' => 3 );
+  $args = array('post_type' => 'seleccion_post', 'post_per_page' => 50 );
   $loop = new WP_Query( $args );
   
   if( $loop->have_posts() ):
@@ -107,7 +107,7 @@ global $la_url;
 
     responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 770,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2
@@ -120,6 +120,9 @@ global $la_url;
         slidesToScroll: 1
       }
     }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
   ]
   });
 </script>
