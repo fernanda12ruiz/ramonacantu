@@ -2201,7 +2201,7 @@ form.search-form, .articulos-boton {
 	padding-top: 265px;
 }
 
-.posts, .art-title{
+.posts, .art-title, #blog-list.art-title {
 	position: relative;
 	width: 90%;
 	margin: 0 auto;
