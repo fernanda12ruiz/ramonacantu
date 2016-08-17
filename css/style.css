@@ -2202,6 +2202,10 @@ form.search-form, .articulos-boton {
 	padding-top: 265px;
 }
 
+.post-list{
+	padding-bottom: 265px;
+}
+
 .posts, .art-title, #blog-list.art-title {
 	position: relative;
 	display: block;
@@ -2358,7 +2362,6 @@ form.search-form, .articulos-boton {
 .seleccion-editor{
 	position: relative;
 	padding-top: 0;
-	margin-top: 200px;
 	background-color: #fff;
 }
 
