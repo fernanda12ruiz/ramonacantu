@@ -64,12 +64,13 @@ article h1{
 
 .nav-previous,
 .nav-next{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 0.9375rem;
   border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
 	flex: 0 0 50%;
 	max-width: 50%;
-	    min-height: 61px;
+	min-height: 61px;
 }
 
 .nav-next{
