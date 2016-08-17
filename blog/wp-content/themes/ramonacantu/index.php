@@ -59,10 +59,7 @@ get_header(); ?>
 
 		endif; ?>
 		</div>
-		 <div class="pagination">
-				<div class="nav-next"><?php previous_posts_link( '&#10094;' ); ?></div>
-				<div class="nav-previous"><?php next_posts_link( '&#10095;' ); ?></div>
-			</div><!-- .pagination -->
+			<?php wpbeginner_numeric_posts_nav(); ?><!-- .pagination -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
