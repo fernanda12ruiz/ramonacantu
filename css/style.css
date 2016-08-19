@@ -2202,7 +2202,7 @@ form.search-form, .articulos-boton {
 	padding-top: 265px;
 }
 
-.post-list{
+#primary.post-list{
 	padding-bottom: 265px;
 }
 
@@ -2363,6 +2363,7 @@ form.search-form, .articulos-boton {
 	position: relative;
 	padding-top: 0;
 	background-color: #fff;
+	margin-top: 0;
 }
 
 .gray-bg{
@@ -2504,6 +2505,39 @@ form.search-form, .articulos-boton {
 
 #blog-list.list-posts{
 	padding-top: 145px;
+}
+
+.page-header h1.page-title{
+	color: #000;
+	font-size: 40px;
+	margin-top: 100px auto 25px auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.entry-header h2.entry-title a{
+	font-size: 18px;
+    font-weight: bold;
+    letter-spacing: normal;
+}
+
+.entry-summary p, .entry-footer p{
+	font-weight: normal;
+}
+
+.entry-footer span.cat-links a{
+	display: inline-block;
+    width: auto;
+    font-weight: normal;
+}
+
+.post.hentry {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    margin-bottom: 100px;
+    max-width: 600px;
 }
 
 /*=== //END BLOG  ===*/
@@ -3662,6 +3696,10 @@ form.search-form, .articulos-boton {
 		letter-spacing: normal;
 	}
 
+	.search-box form label:before{
+		display: none;
+	}
+
 	#blog-list, .seleccion-editor{
 		padding-top: 0;
 	}
@@ -3746,6 +3784,33 @@ form.search-form, .articulos-boton {
 
 	.slick-next {
 	    right: -45px;
+	}
+
+	.thumb img {
+	    max-width: none;
+	    width: 100%;
+	    height: auto !important;
+	}
+
+	.page-header h1.page-title{
+		color: #000;
+		font-size: 25px;
+		margin-top: 75px auto 25px auto;
+	    width: 100%;
+	    max-width: 600px;
+	}
+
+	.entry-header h2.entry-title a{
+		font-size: 16px;
+	}
+
+	.post.hentry {
+	    position: relative;
+	    width: 100%;
+	    margin: 0 auto;
+	    clear: both;
+	    margin-bottom: 65px;
+	    max-width: 600px;
 	}
 
 }
