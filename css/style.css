@@ -2510,34 +2510,9 @@ form.search-form, .articulos-boton {
 .page-header h1.page-title{
 	color: #000;
 	font-size: 40px;
-	margin-top: 100px auto 25px auto;
+	margin: 100px auto 25px auto;
     width: 100%;
-    max-width: 600px;
-}
-
-.entry-header h2.entry-title a{
-	font-size: 18px;
-    font-weight: bold;
-    letter-spacing: normal;
-}
-
-.entry-summary p, .entry-footer p{
-	font-weight: normal;
-}
-
-.entry-footer span.cat-links a{
-	display: inline-block;
-    width: auto;
-    font-weight: normal;
-}
-
-.post.hentry {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    clear: both;
-    margin-bottom: 100px;
-    max-width: 600px;
+    max-width: 960px;
 }
 
 /*=== //END BLOG  ===*/
