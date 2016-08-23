@@ -3009,6 +3009,9 @@ form.search-form, .articulos-boton {
 
 /*=== IPHONE ===*/
 @media only screen and (max-width: 42em){
+	.search-box form label:before{
+		display: none;
+	}
 	.menu{
 		width: 100%;
 		left: -100%;
