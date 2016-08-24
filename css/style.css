@@ -2509,17 +2509,23 @@ form.search-form, .articulos-boton {
 
 .page-header h1.page-title{
 	color: #000;
-	font-size: 40px;
-	margin: 100px auto 25px auto;
-    width: 100%;
+    font-size: 40px;
+    margin: 100px auto 25px auto;
+    width: 90%;
     max-width: 960px;
 }
 
-.resultados{
-	width: 90%;
+.resultados {
+    width: 90%;
     max-width: 960px;
     display: block;
     margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #000;
+}
+
+.resultados:last-child{
+	margin-bottom: 250px;
 }
 
 .resultados .post{
@@ -3796,22 +3802,9 @@ form.search-form, .articulos-boton {
 	.page-header h1.page-title{
 		color: #000;
 		font-size: 25px;
-		margin-top: 75px auto 25px auto;
-	    width: 100%;
-	    max-width: 600px;
-	}
-
-	.entry-header h2.entry-title a{
-		font-size: 16px;
-	}
-
-	.post.hentry {
-	    position: relative;
-	    width: 100%;
-	    margin: 0 auto;
-	    clear: both;
-	    margin-bottom: 65px;
-	    max-width: 600px;
+		margin: 75px auto 25px auto;
+	    width: 90%;
+	    max-width: 960px;
 	}
 
 }
