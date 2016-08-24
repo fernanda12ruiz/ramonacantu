@@ -3807,6 +3807,10 @@ form.search-form, .articulos-boton {
 	    max-width: 960px;
 	}
 
+	.dpsp-column-4.dpsp-has-spacing .dpsp-networks-btns-wrapper li {
+	    width: 50% !important;
+	}
+
 }
 
 /* === LANDSCAPE ===*/
