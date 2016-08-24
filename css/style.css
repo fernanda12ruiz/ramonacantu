@@ -3009,6 +3009,10 @@ form.search-form, .articulos-boton {
 	    width: 80%;
 	    padding-left: 2rem;
 	}
+
+	.dpsp-column-4.dpsp-has-spacing .dpsp-networks-btns-wrapper li {
+	    width: 50% !important;
+	}
 }
 
 /*=== IPHONE ===*/
