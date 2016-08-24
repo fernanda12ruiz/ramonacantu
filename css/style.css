@@ -2515,6 +2515,29 @@ form.search-form, .articulos-boton {
     max-width: 960px;
 }
 
+.resultados{
+	width: 90%;
+    max-width: 960px;
+    display: block;
+    margin: 0 auto;
+}
+
+.resultados .post{
+	width: 100%;
+	float: none;
+	margin-left: 0;
+}
+
+.resultados h2 a{
+	font-weight: normal;
+    font-size: 1.2rem;
+}
+
+
+.resultados h2 a:hover{
+	text-decoration: underline;
+}
+
 /*=== //END BLOG  ===*/
 
 /*=== LARGE SCREENS  ===*/
