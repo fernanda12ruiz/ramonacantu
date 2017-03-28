@@ -97,6 +97,7 @@ global $la_url;
 <script src="<?php echo $la_url; ?>/js/jquery.js"></script>
 <script src="<?php echo $la_url; ?>/js/slick/slick.js"></script>
 <script src="<?php echo $la_url; ?>/js/app.js"></script>
+<script src="<?php echo $la_url; ?>/js/analytics.js"></script>
 <script>
   $('.multiple-items').slick({
     infinite: true,
